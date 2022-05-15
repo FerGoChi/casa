@@ -1,3 +1,5 @@
+package Casa;
+
 import java.util.Scanner;
 
 public class Calculadora {
@@ -35,7 +37,27 @@ public class Calculadora {
 			case 2:
 				System.out.println(op1 + " - " + op2 + " = "+ (op1-op2));
 				break;
+				
+			case 3:
+				System.out.println(op1 + " x " + op2 + " = "+ (op1*op2));
+				break;
+			case 4:
+				if (op2 !=0)	{		
+				System.out.println(op1 + " / " + op2 + " = "+ (op1/op2));
+				}else { System.out.println("la division por 0 no es posible");
+				
 				}
+			case 5:
+				System.out.println("adios");
+				break;
+				
+			default:
+				System.out.println("valor incorrecto");
+				
+				}
+				
+				System.out.println("hola");
+				
 		} while (opcion !=5);
 	}
 }
